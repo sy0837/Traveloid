@@ -20,4 +20,8 @@ public class LoginPage extends AppCompatActivity {
         Intent intent=new Intent(this,singnup.class);
         startActivity(intent);
     }
+    public void login(View view){
+        Intent intent=new Intent(this,mainpage.class);
+        startActivity(intent);
+    }
 }
