@@ -21,7 +21,7 @@ public class LoginPage extends AppCompatActivity {
         startActivity(intent);
     }
     public void login(View view){
-        Intent intent=new Intent(this,mainpage.class);
+        Intent intent=new Intent(this,homepage.class);
         startActivity(intent);
     }
 }
