@@ -32,60 +32,35 @@
             android:src="@drawable/setting"
             android:layout_marginLeft="20dp"/>
     </Toolbar>
-    <TextView
+    <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#000"
-        />
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/home"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/home"
-        android:clickable="true"
-        android:padding="5dp"/>
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/hotel"
-        android:layout_toRightOf="@id/home"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="50dp"
-        android:clickable="true"
-        android:id="@+id/hotel"
-        android:padding="5dp"
-        />
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/travel"
-        android:layout_toRightOf="@id/hotel"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="50dp"
-        android:clickable="true"
-        android:id="@+id/travel"
-        android:padding="5dp"
-        />
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/user_home"
-        android:layout_toRightOf="@id/travel"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="50dp"
-        android:id="@+id/user"
-        android:padding="5dp"
-        />
-    <Space
+        android:background="#000000"
+        android:id="@+id/tl">
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tl"
+        android:layout_below="@+id/hometool">
+    </android.support.v4.view.ViewPager>
+
 
 
 
