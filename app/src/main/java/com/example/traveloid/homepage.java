@@ -1,5 +1,6 @@
 package com.example.traveloid;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -25,6 +26,11 @@ public class homepage extends AppCompatActivity {
         vp.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tl));
         tl.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(vp));
         setTabIcons();
+
+    }
+    public void search(View view){
+        Intent intent = new Intent(this,Search.class);
+        startActivity(intent);
     }
 
     private class MyAdapter extends FragmentPagerAdapter {
