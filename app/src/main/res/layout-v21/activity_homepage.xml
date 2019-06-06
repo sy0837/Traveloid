@@ -13,6 +13,7 @@
         android:id="@+id/hometool"
 
         android:background="#000"
+
         >
     <ImageView
         android:id="@+id/hometitle"
@@ -20,6 +21,16 @@
         android:layout_height="wrap_content"
         android:src="@drawable/traveloidsmall"
         />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:layout_marginLeft="180dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/setting"
+            android:layout_marginLeft="20dp"/>
     </Toolbar>
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +43,7 @@
         android:layout_height="40dp"
         android:src="@drawable/home"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginBottom="10dp"
         android:id="@+id/home"
         android:clickable="true"/>
@@ -45,7 +56,30 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="50dp"
         android:clickable="true"
+        android:id="@+id/hotel"
         />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/travel"
+        android:layout_toRightOf="@id/hotel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:clickable="true"
+        android:id="@+id/travel"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/user_home"
+        android:layout_toRightOf="@id/travel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/user"
+        />
+
 
 
 
