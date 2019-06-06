@@ -37,7 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#000000"
-        android:id="@+id/tl">
+        android:id="@+id/tl"
+        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorGravity="top">
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
