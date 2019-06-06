@@ -31,8 +31,9 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/setting"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"/>
     </Toolbar>
     <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
