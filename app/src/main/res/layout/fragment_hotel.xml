@@ -1,14 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Hotel">
+    tools:context=".Hotel"
+    android:background="@color/background"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="250dp"
+        android:background="@drawable/grad"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City, Area and Hotel"
+        android:backgroundTint="#000"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/citysearch"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check"
+        android:layout_below="@id/citysearch"
+        android:layout_alignLeft="@id/citysearch">
 
-</FrameLayout>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Check-in"
+        android:inputType="date"
+        android:backgroundTint="#000"
+        android:id="@+id/checkin"
+        android:textColorHint="@color/white"
+        />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Check-out"
+        android:inputType="date"
+        android:backgroundTint="#000"
+        android:layout_toRightOf="@id/checkin"
+        android:id="@+id/checkout"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="40dp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check"
+        android:layout_alignLeft="@id/check"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spin">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rooms"
+        android:id="@+id/rooms"
+
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rooms"
+        android:id="@+id/roomspinner">
+
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adults"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/roomspinner"
+
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/adult"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/adult"
+        android:id="@+id/adultspinner">
+
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Child"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/adultspinner"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/child"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/child"
+        android:id="@+id/childspinner">
+
+    </Spinner>
+    </RelativeLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:background="#064acb"
+        android:textColor="@color/white"
+        android:layout_below="@id/spin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clickable="true"/>
+
+
+
+
+</RelativeLayout>
