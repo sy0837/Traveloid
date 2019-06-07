@@ -15,5 +15,6 @@ public class Settings extends AppCompatActivity {
     public void donebtn(View view){
         Intent intent =new Intent(this,homepage.class);
         startActivity(intent);
+        finish();
     }
 }

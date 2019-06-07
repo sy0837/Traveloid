@@ -23,5 +23,6 @@ public class singnup extends AppCompatActivity {
     public void openMainPage(){
         Intent intent=new Intent(this,homepage.class);
         startActivity(intent);
+        finish();
     }
 }
