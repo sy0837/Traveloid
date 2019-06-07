@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:text="Explore"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_below="@id/ad1"
                 android:id="@+id/explore"
                 android:paddingLeft="10dp"/>
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:text="Recent Places"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_below="@id/explore"
                 android:layout_marginTop="100dp"
                 android:paddingLeft="10dp"
@@ -184,8 +184,8 @@
                         android:orientation="vertical"
                         android:padding="5dp">
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:src="@drawable/indiagate"
                             android:layout_marginLeft="10dp"
                             android:id="@+id/indiagate"
@@ -212,10 +212,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="10dp">
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:src="@drawable/tajmahal"
                             android:id="@+id/tajmahal"
                             android:layout_centerHorizontal="true"/>
@@ -237,10 +237,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="10dp">
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:src="@drawable/goldentemple"
                             android:id="@+id/goldentemple"
                             android:layout_centerHorizontal="true"
@@ -263,12 +263,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp"
-                        android:layout_marginLeft="40dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_gravity="center"
                         >
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:src="@drawable/jamamasjid"
                             android:id="@+id/jamamasjid"
                             android:layout_centerHorizontal="true"/>
@@ -283,6 +283,32 @@
                             android:gravity="center"
                             android:layout_centerInParent="true"/>
                     </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/red_fort"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/redfort"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Red Fort"
+                            android:layout_below="@id/redfort"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:id="@+id/redforttext"/>
+
+                    </RelativeLayout>
+
+
 
 
 
@@ -294,12 +320,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Popular places"
+                android:textSize="25dp"
+                android:text="Recommended Places"
                 android:id="@+id/popularplaces"
                 android:textColor="@color/white"
                 android:layout_below="@id/recentplaces"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="120dp"
                 android:paddingLeft="10dp"/>
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -319,8 +345,8 @@
                         android:orientation="vertical"
                         android:padding="5dp">
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="100dp"
+                            android:layout_height="99dp"
                             android:src="@drawable/indiagate"
                             android:layout_marginLeft="10dp"
                             android:id="@+id/indiagate1"
@@ -347,10 +373,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="10dp">
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="100dp"
+                            android:layout_height="99dp"
                             android:src="@drawable/tajmahal"
                             android:id="@+id/tajmahal1"
                             android:layout_centerHorizontal="true"/>
@@ -372,10 +398,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp"
-                        android:layout_marginLeft="40dp">
+                        android:layout_marginLeft="10dp">
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="100dp"
+                            android:layout_height="99dp"
                             android:src="@drawable/goldentemple"
                             android:id="@+id/goldentemple1"
                             android:layout_centerHorizontal="true"
@@ -398,12 +424,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp"
-                        android:layout_marginLeft="40dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_gravity="center"
                         >
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
                             android:src="@drawable/jamamasjid"
                             android:id="@+id/jamamasjid1"
                             android:layout_centerHorizontal="true"/>
@@ -417,6 +443,30 @@
                             android:layout_below="@id/jamamasjid1"
                             android:gravity="center"
                             android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/red_fort"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/redfort1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Red Fort"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="2dp"
+                            android:id="@+id/redforttext1"
+                            android:layout_below="@id/redfort1"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"/>
+
                     </RelativeLayout>
 
 
