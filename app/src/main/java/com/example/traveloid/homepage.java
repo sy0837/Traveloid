@@ -61,5 +61,9 @@ public class homepage extends AppCompatActivity {
         tl.getTabAt(2).setIcon(tabicons[2]);
         tl.getTabAt(3).setIcon(tabicons[3]);
     }
+    public void settings(View view){
+        Intent intent = new Intent(this,Settings.class);
+        startActivity(intent);
+    }
 
 }
