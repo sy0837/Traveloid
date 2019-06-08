@@ -1,9 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Search">
+    tools:context=".Search"
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:id="@+id/searchtitle"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/searchtitle"
+        android:src="@drawable/searchbar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Searches"
+        android:textColor="@color/white"
+        android:layout_below="@id/searchbar"
+        android:textSize="20dp"
+        android:id="@+id/recentsearches"
+        android:padding="10dp"
+        />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recentsearches"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/recentlinear"
+            >
+            <!--India gate-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/indiagate"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/indiagate"
+                    android:layout_centerHorizontal="true"
 
-</android.support.constraint.ConstraintLayout>
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/indiagate"
+                    android:text="India Gate"
+                    android:textColor="@color/white"
+                    android:layout_alignRight="@id/indiagate"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/indiagatetext"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout>
+
+            <!--Taj Mahal-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/tajmahal"
+                    android:id="@+id/tajmahal"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taj Mahal"
+                    android:layout_below="@id/tajmahal"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/tajmahaltext"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <!--golden temple-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/goldentemple"
+                    android:id="@+id/goldentemple"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Golden Temple"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/goldentempletext"
+                    android:layout_below="@id/goldentemple"
+                    />
+            </RelativeLayout>
+
+            <!--jama mashjid-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/jamamasjid"
+                    android:id="@+id/jamamasjid"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jama Mashjid"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/jamatext"
+                    android:layout_below="@id/jamamasjid"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/red_fort"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/redfort"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red Fort"
+                    android:layout_below="@id/redfort"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:id="@+id/redforttext"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show All"
+        android:textColor="@color/white"
+        android:layout_below="@id/searchbar"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/recentsearches"
+        android:text="Popular Places"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/recentsearches"
+        android:layout_marginTop="110dp"
+        android:padding="10dp"
+        android:id="@+id/popplaces"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popplaces"
+        android:id="@+id/grid1"
+        >
+
+    </GridView>
+
+
+
+</RelativeLayout>

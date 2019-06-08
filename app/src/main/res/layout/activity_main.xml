@@ -7,9 +7,9 @@
     tools:context=".MainActivity"
     android:background="#1f2123">
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/effect"/>
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/gradient"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

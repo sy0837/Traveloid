@@ -193,6 +193,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/back"
         android:numColumns="3"
+        android:id="@+id/grid"
         >
 
     </GridView>

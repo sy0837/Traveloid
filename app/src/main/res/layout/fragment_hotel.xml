@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:hint="City, Area and Hotel"
         android:backgroundTint="#000"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
@@ -37,7 +37,7 @@
         android:inputType="date"
         android:backgroundTint="#000"
         android:id="@+id/checkin"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         />
     <EditText
         android:layout_width="150dp"
@@ -47,67 +47,103 @@
         android:backgroundTint="#000"
         android:layout_toRightOf="@id/checkin"
         android:id="@+id/checkout"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         android:layout_marginLeft="40dp"
         />
 </RelativeLayout>
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/check"
         android:layout_alignLeft="@id/check"
         android:layout_marginTop="10dp"
-        android:id="@+id/spin">
+        android:id="@+id/spin"
+        android:layout_marginRight="30dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/roomrelative">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rooms"
         android:id="@+id/rooms"
+        android:layout_alignParentLeft="true"
 
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        android:paddingLeft="5dp"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/rooms"
-        android:id="@+id/roomspinner">
+        android:textSize="19dp"
+        android:textColor="@color/black"
+        android:paddingLeft="0dp"/>
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rooms"
+            android:inputType="number"
+            android:id="@+id/roomno"
+            android:textSize="19dp"
+            android:paddingBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_outline"
+            android:backgroundTint="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adultrelative"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adults"
+                android:id="@+id/adults"
+                android:layout_alignParentLeft="true"
 
-    </Spinner>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adults"
-        android:textColor="@color/white"
-        android:layout_toRightOf="@id/roomspinner"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:paddingLeft="0dp"/>
+            <EditText
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adults"
+                android:inputType="number"
+                android:id="@+id/adultsno"
+                android:textSize="19dp"
+                android:paddingBottom="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_outline"
+                android:backgroundTint="@color/white"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/childrelative"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Child*"
+                android:id="@+id/child"
+                android:layout_alignParentLeft="true"
 
-        android:textSize="18dp"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/adult"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:paddingLeft="0dp"/>
+            <EditText
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/child"
+                android:inputType="number"
+                android:id="@+id/childno"
+                android:textSize="19dp"
+                android:paddingBottom="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_outline"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                />
+        </RelativeLayout>
 
-        android:layout_toRightOf="@id/adult"
-        android:id="@+id/adultspinner">
-
-    </Spinner>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Child"
-        android:textColor="@color/white"
-        android:layout_toRightOf="@id/adultspinner"
-        android:textSize="18dp"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/child"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/child"
-        android:id="@+id/childspinner">
-
-    </Spinner>
     </RelativeLayout>
     <Button
         android:layout_width="120dp"
