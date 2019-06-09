@@ -6,22 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".Settings"
     android:background="@color/background">
-    <Toolbar
-        android:id="@+id/hometool"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:background="#000"
-
-        >
 
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:textColor="@color/orange"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
 
-
-    </Toolbar>
-
+    
 
     <TextView
         android:id="@+id/donebtn"
@@ -59,11 +56,13 @@
         android:layout_below="@+id/UserName"
         android:layout_marginTop="60dp"
         android:orientation="vertical"
-        android:paddingLeft="30dp">
+        android:paddingLeft="30dp"
+        android:id="@+id/settingslinear">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="5dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -86,7 +85,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="0dp">
+            android:padding="5dp">
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -106,7 +105,8 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="5dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -129,7 +129,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="5dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -151,6 +152,81 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/account"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Account"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/application"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Application"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/faq"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="FAQ"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"/>
+
+
+
+        </LinearLayout>
 
 
 
@@ -159,6 +235,20 @@
 
 
     </LinearLayout>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/traveloidsmall"
+        android:layout_below="@id/settingslinear"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/smallLabel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v0.0.1"
+        android:textColor="@color/white"
+        android:layout_below="@id/smallLabel"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>
