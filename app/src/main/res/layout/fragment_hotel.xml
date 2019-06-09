@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:hint="City, Area and Hotel"
         android:backgroundTint="#000"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="30dp"
@@ -37,7 +37,7 @@
         android:inputType="date"
         android:backgroundTint="#000"
         android:id="@+id/checkin"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         />
     <EditText
         android:layout_width="150dp"
@@ -47,7 +47,7 @@
         android:backgroundTint="#000"
         android:layout_toRightOf="@id/checkin"
         android:id="@+id/checkout"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="40dp"
         />
 </RelativeLayout>
@@ -71,7 +71,7 @@
         android:layout_alignParentLeft="true"
 
         android:textSize="19dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:paddingLeft="0dp"/>
         <EditText
             android:layout_width="65dp"
@@ -99,7 +99,7 @@
                 android:layout_alignParentLeft="true"
 
                 android:textSize="19dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:paddingLeft="0dp"/>
             <EditText
                 android:layout_width="65dp"
@@ -127,7 +127,7 @@
                 android:layout_alignParentLeft="true"
 
                 android:textSize="19dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:paddingLeft="0dp"/>
             <EditText
                 android:layout_width="65dp"

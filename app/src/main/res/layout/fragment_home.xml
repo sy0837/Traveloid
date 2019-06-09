@@ -56,14 +56,14 @@
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:orientation="vertical"
-                      android:padding="5dp">
+                      android:padding="5dp"
+                      android:clickable="true">
                   <ImageView
                       android:layout_width="60dp"
                       android:layout_height="60dp"
                       android:src="@drawable/adventure"
                       android:layout_marginLeft="10dp"
                       android:id="@+id/adventure"
-
                       />
                   <TextView
                       android:layout_width="wrap_content"
@@ -75,7 +75,8 @@
                       android:layout_marginTop="2dp"
                       android:id="@+id/adventuretext"
                       android:layout_centerInParent="true"
-                      android:layout_marginLeft="5dp"/>
+                      android:layout_marginLeft="5dp"
+                      />
               </RelativeLayout>
 
                   <!--Reliogion-->
@@ -116,8 +117,6 @@
                           android:layout_width="60dp"
                           android:layout_height="60dp"
                           android:src="@drawable/tajmahal"
-                          app:civ_border_width="2dp"
-                          app:civ_border_color="@color/background"
                           android:layout_marginLeft="10dp"
                           android:layout_centerHorizontal="true"
                           />
