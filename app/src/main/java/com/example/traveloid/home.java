@@ -1,6 +1,7 @@
 package com.example.traveloid;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -24,6 +25,15 @@ public class home extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+    public void something(View view){
+
+        switch (view.getId()){
+            case R.id.adventure:
+                Intent i=new Intent(getActivity(),adventure.class);
+                startActivity(i);
+        }
+
     }
 
 }

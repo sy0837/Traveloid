@@ -57,14 +57,17 @@
                       android:layout_height="wrap_content"
                       android:orientation="vertical"
                       android:padding="5dp"
-                      android:clickable="true">
-                  <ImageView
-                      android:layout_width="60dp"
-                      android:layout_height="60dp"
-                      android:src="@drawable/adventure"
-                      android:layout_marginLeft="10dp"
-                      android:id="@+id/adventure"
-                      />
+                      android:clickable="true"
+                      android:id="@+id/adventurerelative"
+                      >
+
+                      <ImageView
+                          android:id="@+id/adventure"
+                          android:layout_width="60dp"
+                          android:layout_height="60dp"
+                          android:layout_marginLeft="10dp"
+                          android:onClick="something"
+                          android:src="@drawable/adventure" />
                   <TextView
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"

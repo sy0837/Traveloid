@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:text="Taxi"/>
     </android.support.design.widget.TabLayout>
+    
 
 
 
