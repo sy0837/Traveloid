@@ -32,7 +32,7 @@
         android:id="@+id/firstname"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:hint="Fisrt name"
+        android:hint="First name"
         android:layout_marginLeft="0dp"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/black"

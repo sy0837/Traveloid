@@ -26,14 +26,8 @@ public class home extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
-    public void something(View view){
 
-        switch (view.getId()){
-            case R.id.adventure:
-                Intent i=new Intent(getActivity(),adventure.class);
-                startActivity(i);
-        }
 
     }
 
-}
+
