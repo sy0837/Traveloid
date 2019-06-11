@@ -83,7 +83,8 @@
             android:paddingBottom="2dp"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/black"
+            />
     </RelativeLayout>
         <RelativeLayout
             android:layout_width="wrap_content"

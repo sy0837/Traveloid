@@ -247,7 +247,8 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/settingslinear"
-        android:id="@+id/logout"/>
+        android:id="@+id/logout"
+        android:onClick="logout"/>
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"

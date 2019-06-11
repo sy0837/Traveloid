@@ -17,4 +17,11 @@ public class Settings extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    public void logout(View view){
+        Intent i=new Intent(this,LoginPage.class);
+        startActivity(i);
+        finish();
+
+    }
+
 }

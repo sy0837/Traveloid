@@ -64,7 +64,7 @@ public class homepage extends AppCompatActivity {
     public void settings(View view){
         Intent intent = new Intent(this,Settings.class);
         startActivity(intent);
-        onPause();
+        finish();
     }
 
 }
