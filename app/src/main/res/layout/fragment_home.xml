@@ -6,6 +6,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home"
     android:background="@color/background">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/gradback"
+        android:background="@drawable/gradient"/>
     <!--
     main scroll view vertical-->
     <ScrollView
@@ -14,12 +19,18 @@
         android:scrollbars="vertical">
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:id="@+id/gradback"
-                android:background="@drawable/gradient"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/timer"
+                android:text="7 days left for Goa trip"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="20dp"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -27,6 +38,7 @@
                 android:layout_centerHorizontal="true"
                 android:padding="15dp"
                 android:id="@+id/ad1"
+                android:layout_below="@id/timer"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -142,8 +154,8 @@
                       android:layout_height="wrap_content"
                       android:orientation="vertical"
                       android:padding="5dp"
-                      android:layout_marginLeft="30dp"
                       android:layout_gravity="center"
+                      android:layout_marginLeft="30dp"
                       >
                       <ImageView
                           android:layout_width="60dp"
